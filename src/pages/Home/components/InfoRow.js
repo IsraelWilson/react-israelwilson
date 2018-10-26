@@ -1,20 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 //import '../styles/home.css';
 
 export class InfoRow extends React.Component {
-  constructor() {
-
+  constructor(props) {
+    super(props);
   }
 
-  return (
-    <div>
-      <h1>{props.header}</h1>
+  render() {
+    return (
       <div>
-        <p>
-          {props.paragraph}
-        </p>
+        <h1>{this.props.header}</h1>
+        <div>
+          <p>
+            {this.props.paragraph}
+          </p>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }

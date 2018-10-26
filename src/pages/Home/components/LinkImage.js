@@ -1,13 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 //import '../styles/home.css';
 
 export class LinkImage extends React.Component {
-  constructor() {
-
+  constructor(props) {
+    super(props);
   }
 
-  return (
-    <a href={props.url}><img src={props.filePath}></a>
-  );
+  render() {
+    return (
+      <a href={this.props.url}><img src={this.props.filePath}/></a>
+    );
+  }
 }

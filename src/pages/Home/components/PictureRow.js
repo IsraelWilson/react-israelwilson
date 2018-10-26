@@ -1,19 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {LinkImage} from "./LinkImage";
 //import '../styles/home.css';
 
 export class PictureRow extends React.Component {
-  constructor() {
-
+  constructor(props) {
+    super(props);
+    this.pictures = props.links.map(link => (<LinkImage url={link.url} filePath={link.filePath}/>));
   }
 
-  return (
-    <div>
-      <h1>props.header</h1>
-      props.links.map(link => (
-        <LinkImage url={link.url}
-                   filePath={link.filePath}/>
-                 ));
-    </div>
-  );
+  render() {
+    return (
+      <div>
+        <h1>{this.props.header}</h1>
+        {this.pictures}
+      </div>
+    );
+  }
 }
