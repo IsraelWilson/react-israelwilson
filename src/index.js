@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Home} from "./pages/Home/Home.js"
+import {Home} from "./pages/Home/Home"
 
 // ========================================
 

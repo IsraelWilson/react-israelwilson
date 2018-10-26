@@ -1,21 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 //import '../styles/home.css';
 
 export class NavBar extends React.Component {
-  constructor() {
-
+  constructor(props) {
+    super(props);
   }
 
   render() {
     return (
       <div>
         <ul>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>Resume</li>
-          <li>Hobbies</li>
-          <li>About</li>
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>Projects</li></a>
+          <a href="#"><li>Resume</li></a>
+          <a href="#"><li>Hobbies</li></a>
+          <a href="#"><li>About</li></a>
         </ul>
       </div>
     );
