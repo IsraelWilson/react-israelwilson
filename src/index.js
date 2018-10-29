@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {NavBar} from "./components/NavBar";
+import {Footer} from "./components/Footer";
 import {Home} from "./pages/Home/Home"
 
 class Website extends React.Component {
@@ -9,7 +11,11 @@ class Website extends React.Component {
 
   render() {
     return(
-      <Home />
+      <React.Fragment>
+        <NavBar />
+          <Home />
+        <Footer />
+      </React.Fragment>
     );
   }
 }

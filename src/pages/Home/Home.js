@@ -1,6 +1,4 @@
 import React from 'react';
-import {NavBar} from "./components/NavBar";
-import {Footer} from "./components/Footer";
 import {PictureRow} from "./components/PictureRow";
 import {InfoRow} from "./components/InfoRow";
 //import '../styles/home.css';
@@ -19,7 +17,6 @@ export class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-      <NavBar />
       <InfoRow header="About" paragraph="Launched in 2018 as a waypoint for
                                          aspiring developers interested in starting
                                          a career in web or mobile application design,
@@ -36,8 +33,6 @@ export class Home extends React.Component {
                                          home and get to know the man behind the code."/>
 
       <PictureRow links={this.socialMediaLinks}/>
-
-      <Footer />
       </React.Fragment>
     );
   }
