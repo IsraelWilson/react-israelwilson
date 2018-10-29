@@ -1,13 +1,9 @@
 import React from 'react';
 
-export class ContentAndroid extends React.Component {
+export class ContentInfo extends React.Component {
   constructor(props) {
     super(props);
-    this.tools = [];
-  }
-
-  function createCards() {
-    
+    this.tools = props.toolsInfo.map(info => (<PictureCard filePath={info.filePath} header={info.header} paragraph={info.paragraph}/>));
   }
 
   render() {
@@ -18,7 +14,7 @@ export class ContentAndroid extends React.Component {
           {this.props.paragraph}
         </p>
         <div>
-          {}
+          {this.tools}
         </div>
       </div>
       );
