@@ -1,4 +1,5 @@
 import React from 'react';
+import {PictureCard} from "./PictureCard"
 
 export class ContentInfo extends React.Component {
   constructor(props) {

@@ -12,11 +12,11 @@ export class Footer extends React.Component {
         <div>
           <h3>Site Map</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Hobbies</a></li>
-            <li><a href="#">About</a></li>
+            <button type="button"><li>Home</li></button>
+            <button type="button"><li>Projects</li></button>
+            <button type="button"><li>Resume</li></button>
+            <button type="button"><li>Hobbies</li></button>
+            <button type="button"><li>About</li></button>
           </ul>
         </div>
 
@@ -24,7 +24,7 @@ export class Footer extends React.Component {
           <h3>Contact</h3>
           <ul>
             <li>312.478.5154</li>
-            <li><a href="#">Shoot Me an Email</a></li>
+            <li><button type="button">Shoot Me an Email</button></li>
           </ul>
         </div>
 

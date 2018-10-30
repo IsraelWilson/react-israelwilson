@@ -10,11 +10,11 @@ export class NavBar extends React.Component {
     return (
       <div>
         <ul>
-          <a href="#"><li>Home</li></a>
-          <a href="#"><li>Projects</li></a>
-          <a href="#"><li>Resume</li></a>
-          <a href="#"><li>Hobbies</li></a>
-          <a href="#"><li>About</li></a>
+          <button type="button" onClick={() => this.props.linkClick("Home")}><li>Home</li></button>
+          <button type="button" onClick={() => this.props.linkClick("Projects")}><li>Projects</li></button>
+          <button type="button" onClick={() => this.props.linkClick("Resume")}><li>Resume</li></button>
+          <button type="button" onClick={() => this.props.linkClick("Hobbies")}><li>Hobbies</li></button>
+          <button type="button" onClick={() => this.props.linkClick("About")}><li>About</li></button>
         </ul>
       </div>
     );

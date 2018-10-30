@@ -17,4 +17,5 @@ export class Pane extends React.Component {
         </ul>
       </div>
     );
+  }
 }
