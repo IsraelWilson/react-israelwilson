@@ -12,11 +12,11 @@ export class Footer extends React.Component {
         <div>
           <h3>Site Map</h3>
           <ul>
-            <button type="button"><li>Home</li></button>
-            <button type="button"><li>Projects</li></button>
-            <button type="button"><li>Resume</li></button>
-            <button type="button"><li>Hobbies</li></button>
-            <button type="button"><li>About</li></button>
+            <button type="button" onClick={() => this.props.linkClick("Home")}><li>Home</li></button>
+            <button type="button" onClick={() => this.props.linkClick("Projects")}><li>Projects</li></button>
+            <button type="button" onClick={() => this.props.linkClick("Resume")}><li>Resume</li></button>
+            <button type="button" onClick={() => this.props.linkClick("Hobbies")}><li>Hobbies</li></button>
+            <button type="button" onClick={() => this.props.linkClick("About")}><li>About</li></button>
           </ul>
         </div>
 
