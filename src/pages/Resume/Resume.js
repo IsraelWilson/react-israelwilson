@@ -1,9 +1,13 @@
 import React from 'react';
 import {Pane} from "../../components/Pane";
+import {ContentResumeTech} from "./components/ContentResumeTech";
+import {ContentResumeCV} from "./components/ContentResumeCV";
+//import {ContentResumeDown} from "./components/ContentResumeDown";
 
 export class Resume extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {resume: <ContentResumeTech />};
     this.paneButtons = [{click: () => {alert("Clicked")}, title: "Technical"},
                         {click: () => {alert("Clicked")}, title: "CV"},
                         {click: () => {alert("Clicked")}, title: "Download"}];
@@ -14,7 +18,7 @@ export class Resume extends React.Component {
       <React.Fragment>
         <Pane navButtons={this.paneButtons}/>
         <div>
-
+          {this.state.resume}
         </div>
       </React.Fragment>
       );
