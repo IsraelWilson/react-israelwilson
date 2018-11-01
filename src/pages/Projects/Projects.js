@@ -1,10 +1,15 @@
 import React from 'react';
-import {Pane} from "./components/Pane";
-import {ContentInfo} from "./components/ContentInfo"
+import {Pane} from "../../components/Pane";
+import {ContentInfo} from "./components/ContentInfo";
 
 export class Projects extends React.Component {
   constructor(props) {
     super(props);
+    this.paneButtons = [{click: () => {alert("Clicked")}, title: "All"},
+                        {click: () => {alert("Clicked")}, title: "Android"},
+                        {click: () => {alert("Clicked")}, title: "Projects"},
+                        {click: () => {alert("Clicked")}, title: "Resume"},
+                        {click: () => {alert("Clicked")}, title: "About"},];
     this.winkTools = [{filePath: "../images/android_studio.png", header: "Android Studio", paragraph: "Android Studio is my development environment of choice for developing android applications."},
                       {filePath: "../images/adobe_illustrator.png", header: "Adobe Illustrator", paragraph: "Android Studio is my development environment of choice for developing android applications."},
                       {filePath: "../images/mysql.png", header: "Mysql", paragraph: "Android Studio is my development environment of choice for developing android applications."},
@@ -19,7 +24,7 @@ export class Projects extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Pane/>
+        <Pane navButtons={this.paneButtons}/>
         <div>
           <ContentInfo filePath="..images/wink.png" toolsInfo={this.winkTools} paragraph="Wink is a rating app based on smileys and colors." />
           <ContentInfo filePath="..images/wink.png" toolsInfo={this.blenderTools} paragraph="Wink is a rating app based on smileys and colors." />

@@ -41,7 +41,7 @@ class Website extends React.Component {
       <React.Fragment>
         <NavBar linkClick={page => this.changePage(page)}/>
           {this.state.activePage}
-        <Footer />
+        <Footer linkClick={page => this.changePage(page)}/>
       </React.Fragment>
     );
   }
