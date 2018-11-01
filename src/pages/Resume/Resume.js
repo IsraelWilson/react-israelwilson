@@ -8,8 +8,8 @@ export class Resume extends React.Component {
   constructor(props) {
     super(props);
     this.state = {resume: <ContentResumeTech />};
-    this.paneButtons = [{click: () => {alert("Clicked")}, title: "Technical"},
-                        {click: () => {alert("Clicked")}, title: "CV"},
+    this.paneButtons = [{click: () => {this.setState({resume: <ContentResumeTech />})}, title: "Technical"},
+                        {click: () => {this.setState({resume: <ContentResumeCV />})}, title: "CV"},
                         {click: () => {alert("Clicked")}, title: "Download"}];
   }
 

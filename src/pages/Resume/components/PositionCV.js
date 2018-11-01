@@ -20,7 +20,7 @@ export class PositionCV extends React.Component {
         <h1>Responsibilities</h1>
 
         <ul>
-          {this.props.responsibilities}
+          {this.responsibilities}
         </ul>
       </div>
     );
