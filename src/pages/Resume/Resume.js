@@ -2,7 +2,7 @@ import React from 'react';
 import {Pane} from "../../components/Pane";
 import {ContentResumeTech} from "./components/ContentResumeTech";
 import {ContentResumeCV} from "./components/ContentResumeCV";
-//import {ContentResumeDown} from "./components/ContentResumeDown";
+import {ContentResumeDown} from "./components/ContentResumeDown";
 
 export class Resume extends React.Component {
   constructor(props) {
@@ -10,7 +10,7 @@ export class Resume extends React.Component {
     this.state = {resume: <ContentResumeTech />};
     this.paneButtons = [{click: () => {this.setState({resume: <ContentResumeTech />})}, title: "Technical"},
                         {click: () => {this.setState({resume: <ContentResumeCV />})}, title: "CV"},
-                        {click: () => {alert("Clicked")}, title: "Download"}];
+                        {click: () => {this.setState({resume: <ContentResumeDown />})}, title: "Download"}];
   }
 
   render() {

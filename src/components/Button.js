@@ -7,7 +7,7 @@ export class Button extends React.Component {
 
   render() {
     return(
-      <button onClick={() => this.props.onClick()}>{this.props.title}</button>
+      <button type="button" onClick={() => this.props.onClick()}>{this.props.title}</button>
     );
   }
 }
