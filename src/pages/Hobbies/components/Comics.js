@@ -7,7 +7,7 @@ export class Comics extends React.Component {
 
   render() {
     return(
-
+      <div>Comics</div>
     );
   }
 }

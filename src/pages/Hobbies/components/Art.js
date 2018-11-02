@@ -7,7 +7,7 @@ export class Art extends React.Component {
 
   render() {
     return(
-
+      <div>Art</div>
     );
   }
 }

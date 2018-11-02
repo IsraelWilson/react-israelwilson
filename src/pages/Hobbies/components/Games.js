@@ -7,7 +7,7 @@ export class Games extends React.Component {
 
   render() {
     return(
-
+      <div>Games</div>
     );
   }
 }
