@@ -34,30 +34,45 @@ export class Hobbies extends React.Component {
       case "Books":
         if(!this.state.books.active) {
           this.setState({hobby: <Books />,
-                         books: {active: true, type: {fantasy: {active: true}, selfHelp: {active: false}}}});
+                         books: {active: true, type: {fantasy: {active: true}, selfHelp: {active: false}}},
+                         comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                         games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                         art: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
         }
         break;
       case "Comics":
       if(!this.state.comics.active) {
           this.setState({hobby: <Comics />,
-                         comics: {active: true, type: {manga: {active: true}, marvel: {active: false}}}});
+                         comics: {active: true, type: {manga: {active: true}, marvel: {active: false}}},
+                         books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                         games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                         art: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
         }
         break;
       case "Games":
         if(!this.state.games.active) {
           this.setState({hobby: <Games />,
-                         games: {active: true, type: {pc: {active: true}, playstation: {active: false}}}});
+                         games: {active: true, type: {pc: {active: true}, playstation: {active: false}}},
+                         comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                         books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                         art: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
         }
         break;
       case "Art":
       if(!this.state.art.active) {
           this.setState({hobby: <Art />,
-                         art: {active: true, type: {fan: {active: true}, original: {active: false}}}});
+                         art: {active: true, type: {fan: {active: true}, original: {active: false}}},
+                         comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                         games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                         books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
         }
         break;
       default:
       this.setState({hobby: <Books />,
-                    books: {active: true, type: {fantasy: {active: true}, selfHelp: {active: false}}}});
+                     books: {active: true, type: {fantasy: {active: true}, selfHelp: {active: false}}},
+                     comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                     games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                     art: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
     }
   }
 
@@ -66,54 +81,81 @@ export class Hobbies extends React.Component {
       case "Fantasy":
       if(!this.state.books.type.fantasy.active) {
         this.setState({hobby: <Books />,
-                       books: {active: true, type: {fantasy: {active: true}, selfHelp: {active: false}}}});
+                       books: {active: true, type: {fantasy: {active: true}, selfHelp: {active: false}}},
+                       comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       art: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
       }
       break;
       case "Self Help":
       if(!this.state.books.type.fantasy.active) {
         this.setState({hobby: <Books />,
-                       books: {active: true, type: {fantasy: {active: false}, selfHelp: {active: true}}}});
+                       books: {active: true, type: {fantasy: {active: false}, selfHelp: {active: true}}},
+                       comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       art: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
       }
       break;
       case "Manga/Webtoons":
       if(!this.state.books.type.fantasy.active) {
         this.setState({hobby: <Comics />,
-                       comics: {active: true, type: {manga: {active: true}, marvel: {active: false}}}});
+                       comics: {active: true, type: {manga: {active: true}, marvel: {active: false}}},
+                       books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       art: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
       }
       break;
       case "Marvel":
       if(!this.state.books.type.fantasy.active) {
         this.setState({hobby: <Comics />,
-                       comics: {active: true, type: {manga: {active: false}, marvel: {active: true}}}});
+                       comics: {active: true, type: {manga: {active: false}, marvel: {active: true}}},
+                       books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       art: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
       }
       break;
       case "PC":
       if(!this.state.books.type.fantasy.active) {
         this.setState({hobby: <Games />,
-                       games: {active: true, type: {pc: {active: true}, playstation: {active: false}}}});
+                       games: {active: true, type: {pc: {active: true}, playstation: {active: false}}},
+                       comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       art: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
       }
       break;
       case "Playstation":
       if(!this.state.books.type.fantasy.active) {
         this.setState({hobby: <Games />,
-                       games: {active: true, type: {pc: {active: false}, playstation: {active: true}}}});
+                       games: {active: true, type: {pc: {active: false}, playstation: {active: true}}},
+                       comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       art: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
       }
       break;
       case "Fan Art":
       if(!this.state.books.type.fantasy.active) {
         this.setState({hobby: <Art />,
-                       art: {active: true, type: {fan: {active: true}, original: {active: false}}}});
+                       art: {active: true, type: {fan: {active: true}, original: {active: false}}},
+                       comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
       }
       break;
       case "Original":
       if(!this.state.books.type.fantasy.active) {
         this.setState({hobby: <Art />,
-                       art: {active: true, type: {fan: {active: false}, original: {active: true}}}});
+                       art: {active: true, type: {fan: {active: false}, original: {active: true}}},
+                       comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                       books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
       }
       break;
       default:
       this.setState({hobby: <Books />,
-                     books: {active: true, type: {fantasy: {active: true}, selfHelp: {active: false}}}});
+                     books: {active: true, type: {fantasy: {active: true}, selfHelp: {active: false}}},
+                     comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                     games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
+                     art: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
     }
   }
 
