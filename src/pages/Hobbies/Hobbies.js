@@ -8,6 +8,9 @@ import {Art} from "./components/Art";
 export class Hobbies extends React.Component {
   constructor(props) {
     super(props);
+    this.onHobbyClick = this.onHobbyClick.bind(this);
+    this.onSubHobbyClick = this.onSubHobbyClick.bind(this);
+
     this.state = {hobby: <Books />,
                   books: {active: true, type: {fantasy: {active: true}, selfHelp: {active: false}}},
                   comics: {active: false, type: {manga: {active: false}, marvel: {active: false}}},
@@ -74,7 +77,7 @@ export class Hobbies extends React.Component {
                      games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                      art: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}}});
     }
-  }
+  };
 
   onSubHobbyClick(subHobby) {
     switch(subHobby) {

@@ -24,7 +24,7 @@ export class Projects extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Pane navButtons={this.paneButtons}/>
+        <Pane navButtons={this.paneButtons} subNavButtons={null}/>
         <div>
           <ContentInfo filePath="..images/wink.png" toolsInfo={this.winkTools} paragraph="Wink is a rating app based on smileys and colors." />
           <ContentInfo filePath="..images/wink.png" toolsInfo={this.blenderTools} paragraph="Wink is a rating app based on smileys and colors." />

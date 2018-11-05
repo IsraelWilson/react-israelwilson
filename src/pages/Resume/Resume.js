@@ -16,7 +16,7 @@ export class Resume extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Pane navButtons={this.paneButtons}/>
+        <Pane navButtons={this.paneButtons} subNavButtons={null}/>
         <div>
           {this.state.resume}
         </div>
