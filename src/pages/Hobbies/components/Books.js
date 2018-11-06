@@ -7,7 +7,19 @@ export class Books extends React.Component {
   }
 
   componentDidMount() {
-    
+    if(this.props.type == "Fantasy") {
+      });
+    } else {
+      });
+    }
+  }
+
+  buildFantasy(data) {
+
+  }
+
+  buildSelfHelp(data) {
+
   }
 
   render() {
