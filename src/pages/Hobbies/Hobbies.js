@@ -11,7 +11,7 @@ export class Hobbies extends React.Component {
     this.onHobbyClick = this.onHobbyClick.bind(this);
     this.onSubHobbyClick = this.onSubHobbyClick.bind(this);
 
-    this.state = {hobby: <Books />,
+    this.state = {hobby: <Books type="Fantasy"/>,
                   books: {active: true, type: {fantasy: {active: true}, selfHelp: {active: false}}},
                   comics: {active: false, type: {manga: {active: false}, marvel: {active: false}}},
                   games: {active: false, type: {pc: {active: false}, playstation: {active: false}}},
@@ -36,7 +36,7 @@ export class Hobbies extends React.Component {
     switch(hobby){
       case "Books":
         if(!this.state.books.active) {
-          this.setState({hobby: <Books />,
+          this.setState({hobby: <Books type="Fantasy"/>,
                          books: {active: true, type: {fantasy: {active: true}, selfHelp: {active: false}}},
                          comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                          games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
@@ -45,7 +45,7 @@ export class Hobbies extends React.Component {
         break;
       case "Comics":
       if(!this.state.comics.active) {
-          this.setState({hobby: <Comics />,
+          this.setState({hobby: <Comics type="Manga"/>,
                          comics: {active: true, type: {manga: {active: true}, marvel: {active: false}}},
                          books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                          games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
@@ -54,7 +54,7 @@ export class Hobbies extends React.Component {
         break;
       case "Games":
         if(!this.state.games.active) {
-          this.setState({hobby: <Games />,
+          this.setState({hobby: <Games type="PC"/>,
                          games: {active: true, type: {pc: {active: true}, playstation: {active: false}}},
                          comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                          books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
@@ -63,7 +63,7 @@ export class Hobbies extends React.Component {
         break;
       case "Art":
       if(!this.state.art.active) {
-          this.setState({hobby: <Art />,
+          this.setState({hobby: <Art type="FanArt"/>,
                          art: {active: true, type: {fan: {active: true}, original: {active: false}}},
                          comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                          games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
@@ -71,7 +71,7 @@ export class Hobbies extends React.Component {
         }
         break;
       default:
-      this.setState({hobby: <Books />,
+      this.setState({hobby: <Books type="Fantasy"/>,
                      books: {active: true, type: {fantasy: {active: true}, selfHelp: {active: false}}},
                      comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                      games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
@@ -83,7 +83,7 @@ export class Hobbies extends React.Component {
     switch(subHobby) {
       case "Fantasy":
       if(!this.state.books.type.fantasy.active) {
-        this.setState({hobby: <Books />,
+        this.setState({hobby: <Books type="Fantasy"/>,
                        books: {active: true, type: {fantasy: {active: true}, selfHelp: {active: false}}},
                        comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                        games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
@@ -92,7 +92,7 @@ export class Hobbies extends React.Component {
       break;
       case "Self Help":
       if(!this.state.books.type.fantasy.active) {
-        this.setState({hobby: <Books />,
+        this.setState({hobby: <Books type="SelfHelp"/>,
                        books: {active: true, type: {fantasy: {active: false}, selfHelp: {active: true}}},
                        comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                        games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
@@ -101,7 +101,7 @@ export class Hobbies extends React.Component {
       break;
       case "Manga/Webtoons":
       if(!this.state.books.type.fantasy.active) {
-        this.setState({hobby: <Comics />,
+        this.setState({hobby: <Comics type="Manga"/>,
                        comics: {active: true, type: {manga: {active: true}, marvel: {active: false}}},
                        books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                        games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
@@ -110,7 +110,7 @@ export class Hobbies extends React.Component {
       break;
       case "Marvel":
       if(!this.state.books.type.fantasy.active) {
-        this.setState({hobby: <Comics />,
+        this.setState({hobby: <Comics type="Marvel"/>,
                        comics: {active: true, type: {manga: {active: false}, marvel: {active: true}}},
                        books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                        games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
@@ -119,7 +119,7 @@ export class Hobbies extends React.Component {
       break;
       case "PC":
       if(!this.state.books.type.fantasy.active) {
-        this.setState({hobby: <Games />,
+        this.setState({hobby: <Games type="PC"/>,
                        games: {active: true, type: {pc: {active: true}, playstation: {active: false}}},
                        comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                        books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
@@ -128,7 +128,7 @@ export class Hobbies extends React.Component {
       break;
       case "Playstation":
       if(!this.state.books.type.fantasy.active) {
-        this.setState({hobby: <Games />,
+        this.setState({hobby: <Games type="Playstation"/>,
                        games: {active: true, type: {pc: {active: false}, playstation: {active: true}}},
                        comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                        books: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
@@ -137,7 +137,7 @@ export class Hobbies extends React.Component {
       break;
       case "Fan Art":
       if(!this.state.books.type.fantasy.active) {
-        this.setState({hobby: <Art />,
+        this.setState({hobby: <Art type="FanArt"/>,
                        art: {active: true, type: {fan: {active: true}, original: {active: false}}},
                        comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                        games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
@@ -146,7 +146,7 @@ export class Hobbies extends React.Component {
       break;
       case "Original":
       if(!this.state.books.type.fantasy.active) {
-        this.setState({hobby: <Art />,
+        this.setState({hobby: <Art type="Original"/>,
                        art: {active: true, type: {fan: {active: false}, original: {active: true}}},
                        comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                        games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
@@ -154,7 +154,7 @@ export class Hobbies extends React.Component {
       }
       break;
       default:
-      this.setState({hobby: <Books />,
+      this.setState({hobby: <Books type="Fantasy"/>,
                      books: {active: true, type: {fantasy: {active: true}, selfHelp: {active: false}}},
                      comics: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
                      games: {active: false, type: {fantasy: {active: false}, selfHelp: {active: false}}},
