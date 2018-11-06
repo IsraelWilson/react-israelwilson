@@ -8,9 +8,9 @@ export class Books extends React.Component {
 
   componentDidMount() {
     if(this.props.type == "Fantasy") {
-      });
+      fetch("../../../php/getDirectoryContents.php");
     } else {
-      });
+      fetch("../../../php/getDirectoryContents.php");
     }
   }
 
