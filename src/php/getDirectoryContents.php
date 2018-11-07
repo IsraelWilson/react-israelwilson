@@ -12,5 +12,7 @@ if(isset($_POST["directory"])){
   }
 
   echo json_encode($result);
+}else {
+  echo "Directory Not Set";
 }
  ?>

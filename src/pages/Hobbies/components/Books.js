@@ -12,15 +12,13 @@ export class Books extends React.Component {
         method: "POST",
         body: {directory: "Hobbies/images/books/Fantasy"}
         })
-        .then(res => res.json())
+        .then(res => res.text())
         .then(
           result => {
-            alert("Success");
-            this.setState({});
+            console.log(result);
           },
           error => {
-            alert(error);
-            this.setState({});
+            console.log(error);
             }
             )
     } else {
