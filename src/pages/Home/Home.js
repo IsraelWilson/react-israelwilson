@@ -1,7 +1,7 @@
 import React from 'react';
 import {PictureRow} from "./components/PictureRow";
 import {InfoRow} from "./components/InfoRow";
-//import '../styles/home.css';
+import '../../styles.css';
 
 export class Home extends React.Component {
   constructor(props) {

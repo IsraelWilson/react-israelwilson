@@ -1,5 +1,6 @@
 import React from 'react';
 import {PositionCV} from "./PositionCV";
+import '../../../styles.css';
 
 export class ContentResumeCV extends React.Component {
   constructor(props) {

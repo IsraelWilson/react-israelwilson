@@ -1,26 +1,15 @@
-
-
-body {
-
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  li {
-    display: inline-block;
-  }
-
-  a {
-    display: block;
-    padding: 5px 10px;
-    text-decoration: none;
-  }
-
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
 }
 
 .container {
@@ -148,9 +137,4 @@ nav {
   flex-shrink: 0;
 }
 
-button {
-  a {
-
-  }
-
-}
+/*# sourceMappingURL=styles.css.map */

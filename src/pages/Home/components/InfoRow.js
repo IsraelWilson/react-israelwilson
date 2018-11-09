@@ -1,5 +1,5 @@
 import React from 'react';
-//import '../styles/home.css';
+import '../../../styles.css';
 
 export class InfoRow extends React.Component {
   constructor(props) {

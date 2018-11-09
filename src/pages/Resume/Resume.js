@@ -3,6 +3,7 @@ import {Pane} from "../../components/Pane";
 import {ContentResumeTech} from "./components/ContentResumeTech";
 import {ContentResumeCV} from "./components/ContentResumeCV";
 import {ContentResumeDown} from "./components/ContentResumeDown";
+import '../../styles.css';
 
 export class Resume extends React.Component {
   constructor(props) {

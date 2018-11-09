@@ -4,6 +4,7 @@ import {Books} from "./components/Books";
 import {Comics} from "./components/Comics";
 import {Games} from "./components/Games";
 import {Art} from "./components/Art";
+import '../../styles.css';
 
 export class Hobbies extends React.Component {
   constructor(props) {

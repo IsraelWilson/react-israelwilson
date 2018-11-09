@@ -1,6 +1,7 @@
 import React from 'react';
 import {Pane} from "../../components/Pane";
 import {ContentInfo} from "./components/ContentInfo";
+import '../../styles.css';
 
 export class Projects extends React.Component {
   constructor(props) {

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../../styles.css';
 
 export class Books extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import {LinkImage} from "./LinkImage";
-//import '../styles/home.css';
+import '../../../styles.css';
 
 export class PictureRow extends React.Component {
   constructor(props) {

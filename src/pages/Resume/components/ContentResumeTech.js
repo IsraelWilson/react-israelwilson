@@ -1,6 +1,7 @@
 import React from 'react';
 import {PositionTech} from "./PositionTech";
 import {ProgressBar} from "./ProgressBar";
+import '../../../styles.css';
 
 export class ContentResumeTech extends React.Component {
   constructor(props) {

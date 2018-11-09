@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button} from "../../../components/Button";
+import '../../../styles.css';
 
 export class ContentResumeDown extends React.Component {
   constructor(props) {
