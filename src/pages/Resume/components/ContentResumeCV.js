@@ -1,6 +1,7 @@
 import React from 'react';
 import {PositionCV} from "./PositionCV";
 import '../../../styles.css';
+import classNames from "classnames";
 
 export class ContentResumeCV extends React.Component {
   constructor(props) {
@@ -11,8 +12,8 @@ export class ContentResumeCV extends React.Component {
     return(
       <React.Fragment>
         {/* Cotnact row */}
-        <div>
-          <div>
+        <div className={classNames("row")}>
+          <div className={classNames("col-6")}>
             <h1>Israel Stephan John Wilson</h1>
             <p>
               Cell: 312.478.5154
@@ -20,15 +21,14 @@ export class ContentResumeCV extends React.Component {
             </p>
           </div>
 
-          <div>
+          <div className={classNames("col-6")}>
             3515 Coker Street
             Irving, Texas 75062
           </div>
         </div>
 
         {/* Positions row */}
-        <div>
-          <div>
+        <div className={classNames("row")}>
             <PositionCV company="Urban Prep Academy"
                         date="08/2015 - 05/2016"
                         description="Urban Prep Academy is a non-profit organization in Chicago that focuses on getting African American males to graduate high school and college.
@@ -114,12 +114,11 @@ export class ContentResumeCV extends React.Component {
                                           "Keeping work and play areas sanitized",
                                           "Managed money for worksite",
                                           "Organized activities and recreation"]}/>
-          </div>
         </div>
 
         {/* Education row */}
-        <div>
-          <div>
+        <div className={classNames("row")}>
+          <div className={classNames("col-6")}>
             <p>
               Urban Prep Charter Academy
               6201 S Stewart Ave.
@@ -128,7 +127,7 @@ export class ContentResumeCV extends React.Component {
             </p>
           </div>
 
-          <div>
+          <div className={classNames("col-6")}>
             <p>
               Morehouse College
               830 Westview Drive S.W.
@@ -139,8 +138,8 @@ export class ContentResumeCV extends React.Component {
         </div>
 
         {/* Achievement/Extras row */}
-        <div>
-          <div>
+        <div className={classNames("row")}>
+          <div className={classNames("col-12")}>
             <p>
               Suma Cum Lade (Urban Prep)
               15 Time Honorary Gold Tie Recipient – Award weekly to exceptional students (Urban Prep)

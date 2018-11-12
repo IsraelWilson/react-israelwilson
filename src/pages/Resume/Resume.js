@@ -4,6 +4,7 @@ import {ContentResumeTech} from "./components/ContentResumeTech";
 import {ContentResumeCV} from "./components/ContentResumeCV";
 import {ContentResumeDown} from "./components/ContentResumeDown";
 import '../../styles.css';
+import classNames from "classnames";
 
 export class Resume extends React.Component {
   constructor(props) {
@@ -18,7 +19,7 @@ export class Resume extends React.Component {
     return (
       <React.Fragment>
         <Pane navButtons={this.paneButtons} subNavButtons={null}/>
-        <div>
+        <div className={classNames("col-10")}>
           {this.state.resume}
         </div>
       </React.Fragment>

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../../styles.css';
+import classNames from "classnames";
 
 export class PictureCard extends React.Component {
   constructor(props) {
@@ -8,7 +9,7 @@ export class PictureCard extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={classNames("col-3")}>
         <div>
           <img src={this.props.filePath} />
           <h3>{this.props.header}</h3>

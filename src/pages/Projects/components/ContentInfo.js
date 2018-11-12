@@ -1,6 +1,7 @@
 import React from 'react';
 import {PictureCard} from "./PictureCard"
 import '../../../styles.css';
+import classNames from "classnames";
 
 export class ContentInfo extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ export class ContentInfo extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={classNames("row")}>
         <img src={this.props.filePath}/>
         <p>
           {this.props.paragraph}

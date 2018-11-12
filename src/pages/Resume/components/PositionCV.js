@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../../styles.css';
+import classNames from "classnames";
 
 export class PositionCV extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export class PositionCV extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className={classNames("col-12")}>
         <h1>{this.props.company}</h1>
         <h1>{this.props.date}</h1>
 

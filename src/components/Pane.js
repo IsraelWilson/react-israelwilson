@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button} from "./Button";
 import '../styles.css';
+import classNames from "classnames";
 
 export class Pane extends React.Component {
   constructor(props) {
@@ -25,7 +26,7 @@ export class Pane extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={classNames("col-2")}>
         <ul>
           {this.getNavList()}
         </ul>

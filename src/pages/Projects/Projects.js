@@ -2,6 +2,7 @@ import React from 'react';
 import {Pane} from "../../components/Pane";
 import {ContentInfo} from "./components/ContentInfo";
 import '../../styles.css';
+import classNames from "classnames";
 
 export class Projects extends React.Component {
   constructor(props) {
@@ -26,7 +27,7 @@ export class Projects extends React.Component {
     return (
       <React.Fragment>
         <Pane navButtons={this.paneButtons} subNavButtons={null}/>
-        <div>
+        <div className={classNames("col-10")}>
           <ContentInfo filePath="..images/wink.png" toolsInfo={this.winkTools} paragraph="Wink is a rating app based on smileys and colors." />
           <ContentInfo filePath="..images/wink.png" toolsInfo={this.blenderTools} paragraph="Wink is a rating app based on smileys and colors." />
           <ContentInfo filePath="..images/wink.png" toolsInfo={this.unrealTools} paragraph="Wink is a rating app based on smileys and colors." />

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../../styles.css';
+import classNames from "classnames";
 
 export class PositionTech extends React.Component {
   constructor(props) {
@@ -8,7 +9,7 @@ export class PositionTech extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className={classNames("row")}>
         <h1>{this.props.company}</h1>
         <small>{this.props.date}</small>
         <h2>{this.props.title}</h2>

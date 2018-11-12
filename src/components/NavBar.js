@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles.css';
+import classNames from "classnames";
 
 export class NavBar extends React.Component {
   constructor(props) {
@@ -8,13 +9,13 @@ export class NavBar extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={classNames("row")}>
         <ul>
-          <button type="button" onClick={() => this.props.linkClick("Home")}><li>Home</li></button>
-          <button type="button" onClick={() => this.props.linkClick("Projects")}><li>Projects</li></button>
-          <button type="button" onClick={() => this.props.linkClick("Resume")}><li>Resume</li></button>
-          <button type="button" onClick={() => this.props.linkClick("Hobbies")}><li>Hobbies</li></button>
-          <button type="button" onClick={() => this.props.linkClick("About")}><li>About</li></button>
+          <li><button type="button" onClick={() => this.props.linkClick("Home")}>Home</button></li>
+          <li><button type="button" onClick={() => this.props.linkClick("Projects")}>Projects</button></li>
+          <li><button type="button" onClick={() => this.props.linkClick("Resume")}>Resume</button></li>
+          <li><button type="button" onClick={() => this.props.linkClick("Hobbies")}>Hobbies</button></li>
+          <li><button type="button" onClick={() => this.props.linkClick("About")}>About</button></li>
         </ul>
       </div>
     );

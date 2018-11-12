@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../../styles.css';
+import classNames from "classnames";
 
 export class Comics extends React.Component {
   constructor(props) {
@@ -8,7 +9,7 @@ export class Comics extends React.Component {
 
   render() {
     return(
-      <div>Comics</div>
+      <div className={classNames("row")}>Comics</div>
     );
   }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import {PositionTech} from "./PositionTech";
 import {ProgressBar} from "./ProgressBar";
 import '../../../styles.css';
+import classNames from "classnames";
 
 export class ContentResumeTech extends React.Component {
   constructor(props) {
@@ -11,11 +12,11 @@ export class ContentResumeTech extends React.Component {
   render() {
     return(
       <React.Fragment>
-        <div>
-          <div>
+        <div className={classNames("row")}>
+          <div className={classNames("col-2")}>
             <h1>Experience</h1>
           </div>
-          <div>
+          <div className={classNames("col-10")}>
             <PositionTech company="DXC"
                           date="May 2016 - May 2018"
                           title="Associate Professional Application Designer"/>
@@ -41,11 +42,11 @@ export class ContentResumeTech extends React.Component {
                           title="Computer Science Summer Institute Intern"/>
           </div>
 
-          <div>
-            <div>
+          <div className={classNames("row")}>
+            <div className={classNames("col-2")}>
               <h1>Skills</h1>
             </div>
-            <div>
+            <div className={classNames("col-10")}>
               <h1>Languages</h1>
               <ProgressBar title="Java"/>
               <ProgressBar title="Java"/>
@@ -65,11 +66,11 @@ export class ContentResumeTech extends React.Component {
             </div>
           </div>
 
-          <div>
-            <div>
+          <div className={classNames("row")}>
+            <div className={classNames("col-2")}>
               <h1>Education</h1>
             </div>
-            <div>
+            <div className={classNames("col-10")}>
               <h1>B.S. Computer Sciecne <small>Morehouse College</small></h1>
               <h3>2016</h3>
               <h1>Highschool Diploma <small>Urban Prep Academies, Englewood</small></h1>
@@ -77,11 +78,11 @@ export class ContentResumeTech extends React.Component {
             </div>
           </div>
 
-          <div>
-            <div>
+          <div className={classNames("row")}>
+            <div className={classNames("col-2")}>
               <h1>Contact</h1>
             </div>
-            <div>
+            <div className={classNames("col-10")}>
               <h1><small>Email</small>israelsjwilson@gmail.com</h1>
               <h1><small>Cell</small>312.478.5154</h1>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import {LinkImage} from "./LinkImage";
 import '../../../styles.css';
+import classNames from "classnames";
 
 export class PictureRow extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ export class PictureRow extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={classNames("row")}>
         <h1>{this.props.header}</h1>
         {this.pictures}
       </div>

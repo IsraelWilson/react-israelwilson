@@ -5,6 +5,7 @@ import {Comics} from "./components/Comics";
 import {Games} from "./components/Games";
 import {Art} from "./components/Art";
 import '../../styles.css';
+import classNames from "classnames";
 
 export class Hobbies extends React.Component {
   constructor(props) {
@@ -167,7 +168,7 @@ export class Hobbies extends React.Component {
     return (
       <React.Fragment>
         <Pane navButtons={this.paneButtons} subNavButtons={this.paneSubButtons}/>
-        <div>
+        <div className={classNames("col-10")}>
           {this.state.hobby}
         </div>
       </React.Fragment>

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles.css';
+import classNames from "classnames";
 
 export class Footer extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export class Footer extends React.Component {
   render() {
     return (
       <footer>
-        <div>
+        <div className={classNames("row")}>
           <h3>Site Map</h3>
           <ul>
             <button type="button" onClick={() => this.props.linkClick("Home")}><li>Home</li></button>
