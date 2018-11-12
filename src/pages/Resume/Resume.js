@@ -17,12 +17,12 @@ export class Resume extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div className={classNames("container")}>
         <Pane navButtons={this.paneButtons} subNavButtons={null}/>
         <div className={classNames("col-10")}>
           {this.state.resume}
         </div>
-      </React.Fragment>
+      </div>
       );
   }
 }

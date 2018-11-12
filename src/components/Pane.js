@@ -13,13 +13,13 @@ export class Pane extends React.Component {
     var buttons = [];
     if(this.props.subNavButtons != null){
       buttons = this.props.navButtons.map((button, index) => (<>
-                                                              <Button onClick={() => button.click()} title={button.title}/>
-                                                              <Button onClick={() => this.props.subNavButtons[index + index].click()} title={this.props.subNavButtons[index + index].title}/>
-                                                              <Button onClick={() => this.props.subNavButtons[index + index + 1].click()} title={this.props.subNavButtons[index + index + 1].title}/>
+                                                              <li><Button onClick={() => button.click()} title={button.title}/></li>
+                                                              <li><Button onClick={() => this.props.subNavButtons[index + index].click()} title={this.props.subNavButtons[index + index].title}/></li>
+                                                              <li><Button onClick={() => this.props.subNavButtons[index + index + 1].click()} title={this.props.subNavButtons[index + index + 1].title}/></li>
                                                               </>));
     }
     else {
-      buttons = this.props.navButtons.map(button => (<Button onClick={() => button.click()} title={button.title}/>));
+      buttons = this.props.navButtons.map(button => (<li><Button onClick={() => button.click()} title={button.title}/></li>));
     }
     return buttons;
   }
@@ -27,7 +27,7 @@ export class Pane extends React.Component {
   render() {
     return (
       <div className={classNames("col-2")}>
-        <ul>
+        <ul className={classNames("col")}>
           {this.getNavList()}
         </ul>
       </div>

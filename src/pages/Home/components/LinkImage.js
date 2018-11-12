@@ -9,7 +9,9 @@ export class LinkImage extends React.Component {
 
   render() {
     return (
-      <a href={this.props.url}><img src={this.props.filePath}/></a>
+      <div className={classNames("col-3")}>
+        <a href={this.props.url}><img src={this.props.filePath}/></a>
+      </div>
     );
   }
 }

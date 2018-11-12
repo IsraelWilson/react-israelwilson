@@ -12,12 +12,14 @@ export class ContentInfo extends React.Component {
   render() {
     return (
       <div className={classNames("row")}>
-        <img src={this.props.filePath}/>
-        <p>
-          {this.props.paragraph}
-        </p>
-        <div>
-          {this.tools}
+        <div className={classNames("col-12")}>
+          <img src={this.props.filePath}/>
+          <p>
+            {this.props.paragraph}
+          </p>
+          <div className={classNames("row")}>
+            {this.tools}
+          </div>
         </div>
       </div>
       );

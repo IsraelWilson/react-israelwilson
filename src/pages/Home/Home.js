@@ -32,7 +32,7 @@ export class Home extends React.Component {
                                          what I'm reading, playing, and drawing. Make yourself at
                                          home and get to know the man behind the code."/>
 
-      <PictureRow links={this.socialMediaLinks}/>
+      <PictureRow links={this.socialMediaLinks} header="Social Media"/>
       </React.Fragment>
     );
   }

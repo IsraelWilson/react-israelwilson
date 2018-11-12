@@ -41,50 +41,76 @@ export class ContentResumeTech extends React.Component {
                           date="July 2010 - August 2010"
                           title="Computer Science Summer Institute Intern"/>
           </div>
+        </div>
 
-          <div className={classNames("row")}>
-            <div className={classNames("col-2")}>
-              <h1>Skills</h1>
+        <div className={classNames("row")}>
+          <div className={classNames("col-2")}>
+            <h1>Skills</h1>
+          </div>
+          <div className={classNames("col-10")}>
+            <div className={classNames("row")}>
+              <div className={classNames("col-12")}>
+                <h1>Languages</h1>
+                <ProgressBar title="Java"/>
+                <ProgressBar title="Java"/>
+                <ProgressBar title="Java"/>
+                <ProgressBar title="Java"/>
+                <ProgressBar title="Java"/>
+                <ProgressBar title="Java"/>
+              </div>
             </div>
-            <div className={classNames("col-10")}>
-              <h1>Languages</h1>
-              <ProgressBar title="Java"/>
-              <ProgressBar title="Java"/>
-              <ProgressBar title="Java"/>
-              <ProgressBar title="Java"/>
-              <ProgressBar title="Java"/>
-              <ProgressBar title="Java"/>
 
-              <h1>Operating Systems</h1>
-              <ProgressBar title="Java"/>
-              <ProgressBar title="Java"/>
+            <div className={classNames("row")}>
+              <div className={classNames("col-12")}>
+                <h1>Operating Systems</h1>
+                <ProgressBar title="Java"/>
+                <ProgressBar title="Java"/>
+              </div>
+            </div>
 
-              <h1>Software</h1>
-              <ProgressBar title="Java"/>
-              <ProgressBar title="Java"/>
-              <ProgressBar title="Java"/>
+            <div className={classNames("row")}>
+              <div className={classNames("col-12")}>
+                <ProgressBar title="Java"/>
+                <ProgressBar title="Java"/>
+                <ProgressBar title="Java"/>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div className={classNames("row")}>
+          <div className={classNames("col-2")}>
+            <h1>Education</h1>
+          </div>
+          <div className={classNames("col-10")}>
+            <div className={classNames("row")}>
+              <div className={classNames("col-6")}>
+                <h1>B.S. Computer Sciecne <small>Morehouse College</small></h1>
+                <h3>2016</h3>
+              </div>
+
+              <div className={classNames("col-6")}>
+                <h1>Highschool Diploma <small>Urban Prep Academies, Englewood</small></h1>
+                <h3>2010</h3>
+              </div>
             </div>
           </div>
+        </div>
 
-          <div className={classNames("row")}>
-            <div className={classNames("col-2")}>
-              <h1>Education</h1>
-            </div>
-            <div className={classNames("col-10")}>
-              <h1>B.S. Computer Sciecne <small>Morehouse College</small></h1>
-              <h3>2016</h3>
-              <h1>Highschool Diploma <small>Urban Prep Academies, Englewood</small></h1>
-              <h3>2010</h3>
-            </div>
+        <div className={classNames("row")}>
+          <div className={classNames("col-2")}>
+            <h1>Contact</h1>
           </div>
+          <div className={classNames("col-10")}>
+            <div className={classNames("row")}>
+              <div className={classNames("col-6")}>
+                <h1><small>Email</small>israelsjwilson@gmail.com</h1>
+              </div>
 
-          <div className={classNames("row")}>
-            <div className={classNames("col-2")}>
-              <h1>Contact</h1>
-            </div>
-            <div className={classNames("col-10")}>
-              <h1><small>Email</small>israelsjwilson@gmail.com</h1>
-              <h1><small>Cell</small>312.478.5154</h1>
+              <div className={classNames("col-6")}>
+                <h1><small>Cell</small>312.478.5154</h1>
+              </div>
             </div>
           </div>
         </div>

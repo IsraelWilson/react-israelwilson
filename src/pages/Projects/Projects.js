@@ -25,7 +25,7 @@ export class Projects extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div className={classNames("container")}>
         <Pane navButtons={this.paneButtons} subNavButtons={null}/>
         <div className={classNames("col-10")}>
           <ContentInfo filePath="..images/wink.png" toolsInfo={this.winkTools} paragraph="Wink is a rating app based on smileys and colors." />
@@ -33,7 +33,7 @@ export class Projects extends React.Component {
           <ContentInfo filePath="..images/wink.png" toolsInfo={this.unrealTools} paragraph="Wink is a rating app based on smileys and colors." />
           <ContentInfo filePath="..images/wink.png" toolsInfo={this.websiteTools} paragraph="Wink is a rating app based on smileys and colors." />
         </div>
-      </React.Fragment>
+      </div>
       );
   }
 }

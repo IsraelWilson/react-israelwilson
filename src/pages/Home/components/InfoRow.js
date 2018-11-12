@@ -10,11 +10,13 @@ export class InfoRow extends React.Component {
   render() {
     return (
       <div className={classNames("row")}>
-        <h1>{this.props.header}</h1>
-        <div>
-          <p>
-            {this.props.paragraph}
-          </p>
+        <div className={classNames("col-4")}>
+          <h1>{this.props.header}</h1>
+          <div>
+            <p>
+              {this.props.paragraph}
+            </p>
+          </div>
         </div>
       </div>
     );

@@ -10,9 +10,11 @@ export class PositionTech extends React.Component {
   render() {
     return(
       <div className={classNames("row")}>
-        <h1>{this.props.company}</h1>
-        <small>{this.props.date}</small>
-        <h2>{this.props.title}</h2>
+        <div className={classNames("col-12")}>
+          <h1>{this.props.company}</h1>
+          <small>{this.props.date}</small>
+          <h2>{this.props.title}</h2>
+        </div>
       </div>
     );
   }
