@@ -10,7 +10,7 @@ export class ContentResumeDown extends React.Component {
 
   render() {
     return(
-      <React.Fragment>
+      <div className={classNames("row")}>
         <div className={classNames("col-6")}>
           <h3>Curricilum Vitae</h3>
           <button type="button">Download</button>
@@ -20,7 +20,7 @@ export class ContentResumeDown extends React.Component {
           <h3>Technical Resume</h3>
           <button type="button">Download</button>
         </div>
-    </React.Fragment>
+    </div>
     );
   }
 }

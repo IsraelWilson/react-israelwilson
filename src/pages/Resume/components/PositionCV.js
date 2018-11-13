@@ -11,17 +11,22 @@ export class PositionCV extends React.Component {
   render() {
     return(
       <div className={classNames("col-12")}>
+      <div className={classNames("row")}>
         <h1>{this.props.company}</h1>
         <h1>{this.props.date}</h1>
+      </div>
 
         <p>
           {this.props.description}
         </p>
 
-        <h1>{this.props.title}</h1>
-        <h1>Responsibilities</h1>
+        <div className={classNames("row")}>
+          <h1>Position:</h1>
+          <h1>{this.props.title}</h1>
+        </div>
 
-        <ul>
+        <h1>Responsibilities</h1>
+        <ul className={classNames("col")}>
           {this.responsibilities}
         </ul>
       </div>
