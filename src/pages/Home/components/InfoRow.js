@@ -9,8 +9,8 @@ export class InfoRow extends React.Component {
 
   render() {
     return (
-      <div className={classNames("row")}>
-        <div className={classNames("col-4")}>
+      <div className={classNames("row-center")}>
+        <div className={classNames("col-8")}>
           <h1>{this.props.header}</h1>
           <div>
             <p>

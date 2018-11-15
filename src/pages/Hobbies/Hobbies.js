@@ -166,12 +166,12 @@ export class Hobbies extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div className={classNames("container")}>
         <Pane navButtons={this.paneButtons} subNavButtons={this.paneSubButtons}/>
         <div className={classNames("col-10")}>
           {this.state.hobby}
         </div>
-      </React.Fragment>
+      </div>
       );
   }
 }

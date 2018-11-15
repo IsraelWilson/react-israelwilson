@@ -9,7 +9,8 @@ export class NavBar extends React.Component {
 
   render() {
     return (
-      <div className={classNames("row")}>
+      <div className={classNames("row", "navbar")}>
+        <h3>IsraelWilson</h3>
         <ul>
           <li><button type="button" onClick={() => this.props.linkClick("Home")}>Home</button></li>
           <li><button type="button" onClick={() => this.props.linkClick("Projects")}>Projects</button></li>

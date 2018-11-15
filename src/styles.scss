@@ -1,7 +1,46 @@
+// Google font-size
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
+// Font Variables
+$font-family: "Roboto", sans-serif;
+
+// Color Variables
 
 body {
+  font-family: $font-family;
+}
 
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: transparent;
+    color: #0099CC;
+    font-family: $font-family;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    transition: background 250ms ease-in-out,
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &:hover,
+    &:focus {
+        background: #0053ba;
+    }
+
+    &:focus {
+        outline: 1px solid #fff;
+        outline-offset: -4px;
+    }
+
+    &:active {
+        transform: scale(0.99);
+    }
 }
 
 ul {
@@ -11,12 +50,6 @@ ul {
 
   li {
     display: inline-block;
-
-    button {
-      display: block;
-      padding: 5px 10px;
-      text-decoration: none;
-    }
   }
 
   &.col {
@@ -26,12 +59,34 @@ ul {
 
     li {
       display: block;
+    }
+  }
+}
+
+.navbar {
+  justify-content: space-between;
+
+  h3 {
+
+  }
+
+  button {
+
+  }
+}
+
+.footer {
+
+  div {
+
+    h3 {
+
+    }
+
+    ul {
 
       button {
-        width: 100%;
-        display: block;
-        padding: 5px 10px;
-        text-decoration: none;
+
       }
     }
   }
