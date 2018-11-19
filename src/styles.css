@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-body {
+html {
+  font-size: 1em;
   font-family: "Roboto", sans-serif;
 }
 
@@ -50,8 +51,8 @@ ul.col li {
 
 .navbar {
   justify-content: space-between;
+  margin-bottom: 1em;
 }
-
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
