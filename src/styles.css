@@ -64,6 +64,13 @@ ul.col li {
 footer {
   text-align: center;
 }
+footer h3 {
+  margin: 0;
+}
+footer button {
+  padding: 0;
+}
+
 .active {
   background-color: #e7e7e7;
 }
