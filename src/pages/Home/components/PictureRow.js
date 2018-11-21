@@ -11,14 +11,14 @@ export class PictureRow extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
-        <div>
-          <h1>{this.props.header}</h1>
+        <div className={classNames("row", "center-content")}>
+          <div className={classNames("col-12")}>
+            <h1>{this.props.header}</h1>
+            <div className={classNames("row")}>
+              {this.pictures}
+            </div>
+          </div>
         </div>
-        <div className={classNames("row")}>
-          {this.pictures}
-        </div>
-      </React.Fragment>
     );
   }
 }

@@ -9,14 +9,12 @@ export class InfoRow extends React.Component {
 
   render() {
     return (
-      <div className={classNames("row-center")}>
+      <div className={classNames("row-center", "center-content-grey")}>
         <div className={classNames("col-8")}>
           <h1>{this.props.header}</h1>
-          <div>
             <p>
               {this.props.paragraph}
             </p>
-          </div>
         </div>
       </div>
     );
