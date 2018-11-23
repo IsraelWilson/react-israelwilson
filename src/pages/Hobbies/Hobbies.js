@@ -19,19 +19,11 @@ export class Hobbies extends React.Component {
                   games: {active: false, type: {pc: {active: false}, playstation: {active: false}}},
                   art: {active: false, type: {fan: {active: false}, original: {active: false}}}};
 
-    this.paneButtons = [{click: () => {this.onHobbyClick("Books")}, title: "Books"},
-                        {click: () => {this.onHobbyClick("Comics")}, title: "Comics"},
-                        {click: () => {this.onHobbyClick("Games")}, title: "Games"},
-                        {click: () => {this.onHobbyClick("Art")}, title: "Art"}];
+    this.paneButtons = [{click: () => {this.onHobbyClick("Books")}, title: "Books", content: [{click: () => {this.onSubHobbyClick("Fantasy")}, title: "Fantasy"}, {click: () => {this.onSubHobbyClick("Self Help")}, title: "Self Help"}]},
+                        {click: () => {this.onHobbyClick("Comics")}, title: "Comics", content: [{click: () => {this.onSubHobbyClick("Manga/Webtoons")}, title: "Manga/Webtoons"}, {click: () => {this.onSubHobbyClick("Marvel")}, title: "Marvel"}]},
+                        {click: () => {this.onHobbyClick("Games")}, title: "Games", content: [{click: () => {this.onSubHobbyClick("PC")}, title: "PC"}, {click: () => {this.onSubHobbyClick("Playstation")}, title: "Playstation"}]},
+                        {click: () => {this.onHobbyClick("Art")}, title: "Art", content: [{click: () => {this.onSubHobbyClick("Fan Art")}, title: "Fan Art"}, {click: () => {this.onSubHobbyClick("Original")}, title: "Original"}]},];
 
-    this.paneSubButtons = [{click: () => {this.onSubHobbyClick("Fantasy")}, title: "Fantasy"},
-                           {click: () => {this.onSubHobbyClick("Self Help")}, title: "Self Help"},
-                           {click: () => {this.onSubHobbyClick("Manga/Webtoons")}, title: "Manga/Webtoons"},
-                           {click: () => {this.onSubHobbyClick("Marvel")}, title: "Marvel"},
-                           {click: () => {this.onSubHobbyClick("PC")}, title: "PC"},
-                           {click: () => {this.onSubHobbyClick("Playstation")}, title: "Playstation"},
-                           {click: () => {this.onSubHobbyClick("Fan Art")}, title: "Fan Art"},
-                           {click: () => {this.onSubHobbyClick("Original")}, title: "Original"}];
   }
 
   onHobbyClick(hobby) {
@@ -167,7 +159,7 @@ export class Hobbies extends React.Component {
   render() {
     return (
       <div className={classNames("container")}>
-        <Pane navButtons={this.paneButtons} subNavButtons={this.paneSubButtons}/>
+        <Pane paneButtons={this.paneButtons}/>
         <div className={classNames("col-10")}>
           {this.state.hobby}
         </div>

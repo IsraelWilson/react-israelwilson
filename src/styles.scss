@@ -79,7 +79,7 @@ footer {
   text-align: center;
 
   h3 {
-    margin: 0; 
+    margin: 0;
   }
 
   button {
@@ -91,14 +91,12 @@ footer {
   background-color: #e7e7e7;
 }
 
-.collapse {
+.panel-show {
+  display: block;
+}
 
-  .collapse-body {
-
-  }
-  .collapse-item {
-
-  }
+.panel-hide {
+  display: none;
 }
 
 .container {

@@ -11,15 +11,12 @@ export class Pane extends React.Component {
 
   getNavList() {
     var buttons = [];
-    if(this.props.subNavButtons != null){
-      buttons = this.props.navButtons.map((button, index) => (<>
-                                                              <li><Button onClick={() => button.click()} title={button.title}/></li>
-                                                              <li><Button onClick={() => this.props.subNavButtons[index + index].click()} title={this.props.subNavButtons[index + index].title}/></li>
-                                                              <li><Button onClick={() => this.props.subNavButtons[index + index + 1].click()} title={this.props.subNavButtons[index + index + 1].title}/></li>
-                                                              </>));
-    }
-    else {
-      buttons = this.props.navButtons.map(button => (<li><Button onClick={() => button.click()} title={button.title}/></li>));
+    for(var i = 0; i < this.props.paneButtons.length; i++) {
+      if("content" in this.props.paneButtons[i]) {
+        buttons = this.props.paneButtons.map(button => (<React.Fragment><li><Button onClick={() => button.click()} title={button.title}/></li><div>{button.content.map(subButton => (<li><Button onClick={() => subButton.click()} title={subButton.title}/></li>))}</div></React.Fragment>));
+      }else {
+        buttons = this.props.paneButtons.map(button => (<li><Button onClick={() => button.click()} title={button.title}/></li>));
+      }
     }
     return buttons;
   }

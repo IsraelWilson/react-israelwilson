@@ -75,6 +75,18 @@ footer button {
   background-color: #e7e7e7;
 }
 
+.accordion .panel {
+  display: none;
+}
+
+.panel-show {
+  display: block;
+}
+
+.panel-hide {
+  display: none;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
