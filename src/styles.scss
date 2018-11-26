@@ -25,7 +25,8 @@ button {
     text-align: center;
     width: 100%;
     border-radius: .25rem;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
 
     &:hover,
     &:focus {
@@ -58,7 +59,9 @@ ul {
 }
 
 .navbar {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   h3 {
     margin: 0;
@@ -92,11 +95,17 @@ footer {
 }
 
 .panel-show {
-  display: block;
+  max-height: 6.5rem;
+  overflow: hidden;
+  -webkit-transition: max-height 0.4s ease-out;
+  transition: max-height 0.4s ease-out;
 }
 
 .panel-hide {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.4s ease-out;
+  transition: max-height 0.4s ease-out;
 }
 
 .container {
@@ -112,7 +121,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;

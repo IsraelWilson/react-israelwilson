@@ -9,16 +9,44 @@ import classNames from "classnames";
 export class Resume extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {resume: <ContentResumeTech />};
-    this.paneButtons = [{click: () => {this.setState({resume: <ContentResumeTech />})}, title: "Technical"},
-                        {click: () => {this.setState({resume: <ContentResumeCV />})}, title: "CV"},
-                        {click: () => {this.setState({resume: <ContentResumeDown />})}, title: "Download"}];
+    this.state = {resume: <ContentResumeTech />,
+                  paneButtons: [{click: () => {this.changeResume("Technical")}, title: "Technical", active: true},
+                                {click: () => {this.changeResume("CV")}, title: "CV", active: false},
+                                {click: () => {this.changeResume("Download")}, title: "Download", active: false}]};
+  }
+
+  changeResume(resume) {
+    switch(resume) {
+      case "Technical":
+        this.setState({resume: <ContentResumeTech />,
+                       paneButtons: [{click: () => {this.changeResume("Technical")}, title: "Technical", active: true},
+                                     {click: () => {this.changeResume("CV")}, title: "CV", active: false},
+                                     {click: () => {this.changeResume("Download")}, title: "Download", active: false}]});
+        break;
+      case "CV":
+        this.setState({resume: <ContentResumeCV />,
+                       paneButtons: [{click: () => {this.changeResume("Technical")}, title: "Technical", active: false},
+                                     {click: () => {this.changeResume("CV")}, title: "CV", active: true},
+                                     {click: () => {this.changeResume("Download")}, title: "Download", active: false}]});
+        break;
+      case "Download":
+        this.setState({resume: <ContentResumeDown />,
+                       paneButtons: [{click: () => {this.changeResume("Technical")}, title: "Technical", active: false},
+                                     {click: () => {this.changeResume("CV")}, title: "CV", active: false},
+                                     {click: () => {this.changeResume("Download")}, title: "Download", active: true}]});
+        break;
+      default:
+        this.setState({resume: <ContentResumeTech />,
+                       paneButtons: [{click: () => {this.changeResume("Technical")}, title: "Technical", active: true},
+                                     {click: () => {this.changeResume("CV")}, title: "CV", active: false},
+                                     {click: () => {this.changeResume("Download")}, title: "Download", active: false}]});
+    }
   }
 
   render() {
     return (
       <div className={classNames("container")}>
-        <Pane paneButtons={this.paneButtons} />
+        <Pane paneButtons={this.state.paneButtons} />
         <div className={classNames("col-10")}>
           {this.state.resume}
         </div>

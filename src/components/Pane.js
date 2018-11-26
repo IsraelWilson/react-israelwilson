@@ -13,9 +13,9 @@ export class Pane extends React.Component {
     var buttons = [];
     for(var i = 0; i < this.props.paneButtons.length; i++) {
       if("content" in this.props.paneButtons[i]) {
-        buttons = this.props.paneButtons.map(button => (<React.Fragment><li><Button onClick={() => button.click()} title={button.title}/></li><div>{button.content.map(subButton => (<li><Button onClick={() => subButton.click()} title={subButton.title}/></li>))}</div></React.Fragment>));
+        buttons = this.props.paneButtons.map(button => (<React.Fragment><li><Button className={button.active ? classNames("active") : classNames("inactive")} onClick={() => button.click()} title={button.title}/></li><div className={button.active ? classNames("panel-show") : classNames("panel-hide")}>{button.content.map(subButton => (<li><Button className={subButton.active ? classNames("active") : classNames("inactive")} onClick={() => subButton.click()} title={subButton.title}/></li>))}</div></React.Fragment>));
       }else {
-        buttons = this.props.paneButtons.map(button => (<li><Button onClick={() => button.click()} title={button.title}/></li>));
+        buttons = this.props.paneButtons.map(button => (<li><Button className={button.active ? classNames("active") : classNames("inactive")} onClick={() => button.click()} title={button.title}/></li>));
       }
     }
     return buttons;
