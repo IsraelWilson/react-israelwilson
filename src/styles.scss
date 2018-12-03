@@ -58,6 +58,11 @@ ul {
   }
 }
 
+img.resize {
+  max-width: 50%;
+  max-height: 50%;
+}
+
 .navbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
