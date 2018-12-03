@@ -1,15 +1,19 @@
 import React from 'react';
 import {PictureRow} from "./components/PictureRow";
 import {InfoRow} from "./components/InfoRow";
+import twitter from "../../img/icons/twitter.png";
+import play from "../../img/icons/play.png";
+import github from "../../img/icons/github.png";
+import instagram from "../../img/icons/instagram.png";
 import '../../styles.css';
 
 export class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.socialMediaLinks = [{url: "#", filePath: "../images/android_dark.png"},
-                              {url: "#", filePath: "../images/github_dark.png"},
-                              {url: "#", filePath: "../images/instagram_dark.png"},
-                              {url: "#", filePath: "../images/twitter_dark.png"}
+    this.socialMediaLinks = [{url: "#", filePath: play},
+                              {url: "#", filePath: github},
+                              {url: "#", filePath: instagram},
+                              {url: "#", filePath: twitter}
                              ];
 
   }
