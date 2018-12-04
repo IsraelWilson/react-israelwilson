@@ -6,10 +6,10 @@ import mysql from "../../img/icons/mysql.png";
 import java from "../../img/icons/java.png";
 import json from "../../img/icons/json.png";
 import xml from "../../img/icons/xml.png";
-import react from "../../img/icons/react.png";
-import studio from "../../img/icons/studio.png";
-import blender from "../../img/icons/blender.png";
-import unreal from "../../img/icons/unreal.png";
+import react from "../../img/icons/reacts.png";
+import studio from "../../img/icons/studios.png";
+import blender from "../../img/icons/blenders.png";
+import unreal from "../../img/icons/unreals.png";
 import '../../styles.css';
 import classNames from "classnames";
 

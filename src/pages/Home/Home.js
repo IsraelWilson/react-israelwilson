@@ -1,10 +1,10 @@
 import React from 'react';
 import {PictureRow} from "./components/PictureRow";
 import {InfoRow} from "./components/InfoRow";
-import twitter from "../../img/icons/twitter.png";
-import play from "../../img/icons/play.png";
+import twitter from "../../img/icons/twitters.png";
+import play from "../../img/icons/plays.png";
 import github from "../../img/icons/github.png";
-import instagram from "../../img/icons/instagram.png";
+import instagram from "../../img/icons/instagrams.png";
 import '../../styles.css';
 
 export class Home extends React.Component {
