@@ -10,6 +10,7 @@ import react from "../../img/icons/reacts.png";
 import studio from "../../img/icons/studios.png";
 import blender from "../../img/icons/blenders.png";
 import unreal from "../../img/icons/unreals.png";
+import wink from "../../img/icons/wink.png";
 import '../../styles.css';
 import classNames from "classnames";
 
@@ -83,10 +84,10 @@ export class Projects extends React.Component {
       <div className={classNames("container")}>
         <Pane paneButtons={this.state.paneButtons} />
         <div className={classNames("col-10")}>
-          <ContentInfo filePath="..images/wink.png" toolsInfo={this.winkTools} paragraph="Wink is a rating app based on smileys and colors." />
-          <ContentInfo filePath="..images/wink.png" toolsInfo={this.blenderTools} paragraph="Wink is a rating app based on smileys and colors." />
-          <ContentInfo filePath="..images/wink.png" toolsInfo={this.unrealTools} paragraph="Wink is a rating app based on smileys and colors." />
-          <ContentInfo filePath="..images/wink.png" toolsInfo={this.websiteTools} paragraph="Wink is a rating app based on smileys and colors." />
+          <ContentInfo filePath={wink} toolsInfo={this.winkTools} paragraph="Wink is a rating app based on smileys and colors." />
+          <ContentInfo filePath={wink} toolsInfo={this.blenderTools} paragraph="Wink is a rating app based on smileys and colors." />
+          <ContentInfo filePath={wink} toolsInfo={this.unrealTools} paragraph="Wink is a rating app based on smileys and colors." />
+          <ContentInfo filePath={wink} toolsInfo={this.websiteTools} paragraph="Wink is a rating app based on smileys and colors." />
         </div>
       </div>
       );
