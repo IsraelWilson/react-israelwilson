@@ -13,10 +13,17 @@ export class ContentInfo extends React.Component {
     return (
       <div className={classNames("row")}>
         <div className={classNames("col-12")}>
-          <img src={this.props.filePath}/>
-          <p>
-            {this.props.paragraph}
-          </p>
+          <div className={classNames("row")}>
+            <div className={classNames("col-6", "horivert")}>
+              <img src={this.props.filePath}/>
+            </div>
+            <div className={classNames("col-6", "horivert")}>
+              <p>
+                {this.props.paragraph}
+              </p>
+            </div>
+          </div>
+
           <div className={classNames("row")}>
             {this.tools}
           </div>

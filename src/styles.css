@@ -101,6 +101,12 @@ footer button {
   background-color: #e7e7e7;
 }
 
+.horivert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .panel-show {
   max-height: 6.5rem;
   overflow: hidden;

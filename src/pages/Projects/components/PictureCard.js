@@ -9,7 +9,7 @@ export class PictureCard extends React.Component {
 
   render() {
     return (
-      <div className={classNames("col-3", "center-content")}>
+      <div className={classNames("col-3", "center-content-wrap")}>
         <div>
           <img src={this.props.filePath} />
           <h3>{this.props.header}</h3>
