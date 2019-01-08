@@ -9,8 +9,8 @@ export class ProgressBar extends React.Component {
 
   render() {
     return(
-      <div>
-        <h1>{this.props.title}</h1>
+      <div className={classNames("chronology")}>
+        <h6>{this.props.title}</h6>
         <div>Progress Here</div>
       </div>
     );

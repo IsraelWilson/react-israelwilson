@@ -14,7 +14,7 @@ export class ContentResumeTech extends React.Component {
       <React.Fragment>
         <div className={classNames("row")}>
           <div className={classNames("col-2")}>
-            <h1>Experience</h1>
+            <h2>Experience</h2>
           </div>
           <div className={classNames("col-10")}>
             <PositionTech company="DXC"
@@ -45,12 +45,12 @@ export class ContentResumeTech extends React.Component {
 
         <div className={classNames("row")}>
           <div className={classNames("col-2")}>
-            <h1>Skills</h1>
+            <h2>Skills</h2>
           </div>
           <div className={classNames("col-10")}>
             <div className={classNames("row")}>
               <div className={classNames("col-12")}>
-                <h1>Languages</h1>
+                <h2>Languages</h2>
                 <ProgressBar title="Java"/>
                 <ProgressBar title="Java"/>
                 <ProgressBar title="Java"/>
@@ -62,7 +62,7 @@ export class ContentResumeTech extends React.Component {
 
             <div className={classNames("row")}>
               <div className={classNames("col-12")}>
-                <h1>Operating Systems</h1>
+                <h2>Operating Systems</h2>
                 <ProgressBar title="Java"/>
                 <ProgressBar title="Java"/>
               </div>
@@ -81,16 +81,16 @@ export class ContentResumeTech extends React.Component {
 
         <div className={classNames("row")}>
           <div className={classNames("col-2")}>
-            <h1>Education</h1>
+            <h2>Education</h2>
           </div>
           <div className={classNames("col-10")}>
             <div className={classNames("row")}>
-              <div className={classNames("col-6")}>
+              <div className={classNames("col-6", "chronology")}>
                 <h1>B.S. Computer Sciecne <small>Morehouse College</small></h1>
                 <h3>2016</h3>
               </div>
 
-              <div className={classNames("col-6")}>
+              <div className={classNames("col-6", "chronology")}>
                 <h1>Highschool Diploma <small>Urban Prep Academies, Englewood</small></h1>
                 <h3>2010</h3>
               </div>
@@ -100,7 +100,7 @@ export class ContentResumeTech extends React.Component {
 
         <div className={classNames("row")}>
           <div className={classNames("col-2")}>
-            <h1>Contact</h1>
+            <h2>Contact</h2>
           </div>
           <div className={classNames("col-10")}>
             <div className={classNames("row")}>
