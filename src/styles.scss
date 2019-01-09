@@ -58,19 +58,21 @@ ul {
   }
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0.5rem;
 }
 
 .chronology {
+  margin: 1rem;
+  
   h3 {
-    margin: 0.5rem;
-  }
-  h4 {
-    margin: 0.5rem;
+    margin: 0rem;
   }
   h6 {
-    margin: 0.5rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+  }
+  h4 {
+    margin: 1rem 0rem 0rem 0rem;
   }
 }
 

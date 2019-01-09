@@ -85,31 +85,16 @@ export class ContentResumeTech extends React.Component {
           </div>
           <div className={classNames("col-10")}>
             <div className={classNames("row")}>
-              <div className={classNames("col-6", "chronology")}>
-                <h1>B.S. Computer Sciecne <small>Morehouse College</small></h1>
-                <h3>2016</h3>
-              </div>
-
-              <div className={classNames("col-6", "chronology")}>
-                <h1>Highschool Diploma <small>Urban Prep Academies, Englewood</small></h1>
-                <h3>2010</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={classNames("row")}>
-          <div className={classNames("col-2")}>
-            <h2>Contact</h2>
-          </div>
-          <div className={classNames("col-10")}>
-            <div className={classNames("row")}>
               <div className={classNames("col-6")}>
-                <h1><small>Email</small>israelsjwilson@gmail.com</h1>
+                <h5>2016</h5>
+                <h2>B.S. Computer Science</h2>
+                <h3>Morehouse College</h3>
               </div>
 
               <div className={classNames("col-6")}>
-                <h1><small>Cell</small>312.478.5154</h1>
+                <h5>2010</h5>
+                <h2>Highschool Diploma</h2>
+                <h3>Urban Prep Academies, Englewood</h3>
               </div>
             </div>
           </div>
