@@ -1,31 +1,41 @@
+// Color Variables
+$dodger-blue: #236FFF;
+$black: #2D2D31;
+$sky-blue: #23BFFF;
+$starship: #E8F033;
+$mischka: #CBD2DB;
+
+// Color Theme Map
 $theme-colors : (
   'primary' : (
-    'base' : #236FFF,
-    'light' : #ffffff,
-    'dark' : #ffffff
+    'base' : $dodger-blue,
+    'light' : lighten($dodger-blue, 20%),
+    'dark' : darken($dodger-blue, 20%)
   ),
   'accent' : (
-    'base' : #E8F033,
-    'light' : #ffffff,
-    'dark' : #ffffff
+    'base' : $starship,
+    'light' : lighten($starship, 20%),
+    'dark' : darken($starship, 20%)
   ),
   'foreground' : (
-    'base' : #CBD2DB,
-    'light' : #ffffff,
-    'dark' : #ffffff
+    'base' : $mischka,
+    'light' : lighten($mischka, 20%),
+    'dark' : darken($mischka, 20%)
   ),
   'background' : (
-    'base' : #000000,
-    'light' : #ffffff,
-    'dark' : #ffffff
+    'base' : $black,
+    'light' : lighten($black, 20%),
+    'dark' : darken($black, 20%)
   )
 );
 
+// Color Theme Function
 @function theme-color($key: 'primary', $variant: 'base'){
   $map: map-get($theme-colors, $key);
   @return map-get($map, $variant);
 }
 
+// Text Color Map
 $contrast-colors : (
   'dark' : (
     'primary' : rgb(255, 255, 255),
@@ -41,11 +51,13 @@ $contrast-colors : (
   )
 );
 
+// Text Color Function
 @function contrast($background: 'light', $type: 'primary') {
   $map: map-get($contrast-colors, $background);
   @return map-get($map, $type);
 }
 
+// Text Color Mixin
 @mixin text-color($background: 'light', $type: 'primary') {
   color: contrast($background, $type)
 }
