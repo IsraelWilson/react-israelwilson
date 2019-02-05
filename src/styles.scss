@@ -18,12 +18,17 @@ $font-family: "Roboto", sans-serif;
 html {
   font-size: 1em;
   font-family: $font-family;
+  //box-sizing: border-box;
 }
 
 body {
   @include text-color();
   background-color: theme-color('background');
 }
+
+/**, *::before, *::after {
+  box-sizing: inherit;
+}*/
 
 .navbar {
   width: 100%;
@@ -47,10 +52,6 @@ body {
 .content-resume {
   @include margin-nav;
   padding: 0 25%;
-}
-
-.gutter {
-
 }
 
 footer {
@@ -94,6 +95,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   color: theme-color('accent');
   margin: 1rem;
+  width: fit-content;
+  padding: 5rem;
 
   h3 {
     margin: 0rem;
