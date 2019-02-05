@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'colors';
+
+$font-family: "Roboto", sans-serif;
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button {
+  @include button-reset;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  margin: 0;
+
+  border: solid 1rem transparent;
+  border-radius: 1rem;
+
+  padding: 1rem 1.5rem;
+
+  font-family: $font-family;
+  cursor: pointer;
+  width: 100%;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+button:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-filter: saturate(150%);
+          filter: saturate(150%);
+}
+
+button:hover,
+button:focus {
+  opacity: 0.6;
+}
+
+
+.button-nav {
+  @include button-reset;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  margin: 0;
+
+  border-radius: 1px;
+
+  padding: 1rem 1.5rem;
+
+  color: theme-color('foreground');
+  background-color: theme-color('background');
+  outline: none;
+}
+
+.button-nav:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-filter: saturate(150%);
+          filter: saturate(150%);
+}
+
+.button-nav:hover,
+.button-nav:focus {
+  opacity: 0.6;
+}
+
+.button {
+  @include button-reset;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  margin: 0;
+
+  border: solid 1rem transparent;
+  border-radius: 1rem;
+
+  padding: 1rem 1.5rem;
+}
+
+.button:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-filter: saturate(150%);
+          filter: saturate(150%);
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.6;
+}

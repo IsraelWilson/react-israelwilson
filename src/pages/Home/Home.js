@@ -22,17 +22,19 @@ export class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-      <InfoRowGrey header="Hello World!" paragraph="I'm a software engineer located in the DFW area
-                                                    with a passion for web design and application development."/>
-      <InfoRow header="Projects" paragraph="Check out my project portfolio to stay up to date with
-                                            the interesting products I'm pushing out and for any oppertunities
-                                            to collaborate. If you like my work and have something cool to work on,
-                                            send me a message."/>
-      <InfoRowGrey header="Git Gud" paragraph="Video games are what got me interested in programming and I take them
-                                               just as seriously. Get to know more about the kinds of things I enjoy
-                                               doing off the clock under hobbies. You might learn something."/>
+        <div className="content">
+          <InfoRow header="Hello World!" paragraph="I'm a software engineer located in the DFW area
+                                                        with a passion for web design and application development."/>
+          <InfoRowGrey header="Projects" paragraph="Check out my project portfolio to stay up to date with
+                                                the interesting products I'm pushing out and for any oppertunities
+                                                to collaborate. If you like my work and have something cool to work on,
+                                                send me a message."/>
+          <InfoRow header="Git Gud" paragraph="Video games are what got me interested in programming and I take them
+                                                   just as seriously. Get to know more about the kinds of things I enjoy
+                                                   doing off the clock under hobbies. You might learn something."/>
 
-      <PictureRow links={this.socialMediaLinks} header="Social Media"/>
+          <PictureRow links={this.socialMediaLinks} header="Social Media"/>
+        </div>
       </React.Fragment>
     );
   }

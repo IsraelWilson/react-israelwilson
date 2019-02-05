@@ -47,7 +47,7 @@ export class Resume extends React.Component {
     return (
       <div className={classNames("container")}>
         <Pane paneButtons={this.state.paneButtons} />
-        <div className={classNames("col-10")}>
+        <div className={classNames("col-10", "content-resume")}>
           {this.state.resume}
         </div>
       </div>

@@ -11,27 +11,22 @@ export class Footer extends React.Component {
     return (
       <footer className={classNames("row")}>
         <div className={classNames("col-4")}>
-          <ul className={classNames("col")}>
-            <h3>Site Map</h3>
-            <li><button type="button" onClick={() => this.props.linkClick("Home")}>Home</button></li>
-            <li><button type="button" onClick={() => this.props.linkClick("Projects")}>Projects</button></li>
-            <li><button type="button" onClick={() => this.props.linkClick("Resume")}>Resume</button></li>
-            <li><button type="button" onClick={() => this.props.linkClick("Hobbies")}>Hobbies</button></li>
-            <li><button type="button" onClick={() => this.props.linkClick("About")}>About</button></li>
-          </ul>
+          <p>&copy; 2019 Israel Wilson</p>
         </div>
 
         <div className={classNames("col-4")}>
-          <ul className={classNames("col")}>
-            <h3>Contact</h3>
-            <li>312.478.5154</li>
-            <li><button type="button">Shoot Me an Email</button></li>
+          <ul>
+            <li><button className={classNames("button-nav")} type="button" onClick={() => this.props.linkClick("Home")}>HOME</button></li>
+            <li><button className={classNames("button-nav")} type="button" onClick={() => this.props.linkClick("Projects")}>PROJECTS</button></li>
+            <li><button className={classNames("button-nav")} type="button" onClick={() => this.props.linkClick("Resume")}>RESUME</button></li>
+            <li><button className={classNames("button-nav")} type="button" onClick={() => this.props.linkClick("Hobbies")}>HOBBIES</button></li>
+            <li><button className={classNames("button-nav")} type="button" onClick={() => this.props.linkClick("About")}>ABOUT</button></li>
           </ul>
         </div>
 
-        <div className={classNames("col-4")}>
-          <h3>Copyrights</h3>
-        </div>
+          <div className={classNames("col-4")}>
+
+          </div>
       </footer>
     );
   }
