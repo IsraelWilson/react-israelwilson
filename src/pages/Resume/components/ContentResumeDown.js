@@ -10,17 +10,15 @@ export class ContentResumeDown extends React.Component {
 
   render() {
     return(
-      <div className={classNames("row")}>
-        <div className={classNames("col-6")}>
+        <span>
           <h3>Curricilum Vitae</h3>
           <button type="button">Download</button>
-        </div>
+        <span>
 
-        <div className={classNames("col-6")}>
+        </span>
           <h3>Technical Resume</h3>
           <button type="button">Download</button>
-        </div>
-    </div>
+        </span>
     );
   }
 }

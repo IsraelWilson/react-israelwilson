@@ -9,10 +9,10 @@ export class ProgressBar extends React.Component {
 
   render() {
     return(
-      <div className={classNames("chronology")}>
+      <span className={classNames("chronology")}>
         <h6>{this.props.title}</h6>
-        <div>Progress Here</div>
-      </div>
+        <progress value={this.props.value} max={this.props.max}>Progress Here</progress>
+      </span>
     );
   }
 }

@@ -51,7 +51,6 @@ body {
 
 .content-resume {
   @include margin-nav;
-  padding: 0 25%;
 }
 
 footer {
@@ -95,8 +94,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   color: theme-color('accent');
   margin: 1rem;
-  width: fit-content;
-  padding: 5rem;
 
   h3 {
     margin: 0rem;
