@@ -154,6 +154,15 @@ button:focus {
   -ms-flex-negative: 0;
   flex-shrink: 1; }
 
+.col-w {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
 .col-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,15 +374,11 @@ body {
     margin: 0;
     padding: 1rem; }
 
-.pane {
-  margin-top: 3.5rem; }
-
 .content {
   margin-top: 3.5rem; }
 
 .content-resume {
-  margin-top: 3.5rem;
-  padding: 0 25%; }
+  margin-top: 3.5rem; }
 
 footer {
   text-align: center; }
@@ -388,12 +393,12 @@ ul {
   list-style: none; }
   ul li {
     display: inline-block; }
-  ul.col {
+  ul.pane {
     margin: 0;
     padding: 0;
     list-style: none; }
-    ul.col li {
-      display: block; }
+    ul.pane li {
+      display: list-item; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0.5rem; }
@@ -409,6 +414,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0.5rem 0rem 0rem 0rem; }
   .chronology h4 {
     margin: 1rem 0rem 0rem 0rem; }
+  .chronology progress {
+    margin: 0rem; }
 
 img.resize {
   max-width: 50%;

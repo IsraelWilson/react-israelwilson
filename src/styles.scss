@@ -41,10 +41,6 @@ body {
   }
 }
 
-.pane {
-  @include margin-nav;
-}
-
 .content {
   @include margin-nav;
 }
@@ -74,13 +70,13 @@ ul {
     display: inline-block;
   }
 
-  &.col {
+  &.pane {
     margin: 0;
     padding: 0;
     list-style: none;
 
     li {
-      display: block;
+      display: list-item;
     }
   }
 }
@@ -103,6 +99,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   h4 {
     margin: 1rem 0rem 0rem 0rem;
+  }
+
+  progress {
+    margin: 0rem;
   }
 }
 

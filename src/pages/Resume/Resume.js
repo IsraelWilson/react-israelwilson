@@ -1,5 +1,6 @@
 import React from 'react';
 import {Pane} from "../../components/Pane";
+import {Row} from "../../components/Row";
 import {ContentResumeTech} from "./components/ContentResumeTech";
 import {ContentResumeCV} from "./components/ContentResumeCV";
 import {ContentResumeDown} from "./components/ContentResumeDown";
@@ -44,13 +45,12 @@ export class Resume extends React.Component {
   }
 
   render() {
+    const ui = [<Pane paneButtons={this.state.paneButtons} />,
+                <div className={classNames("col")}>
+                  {this.state.resume}
+                </div>];
     return (
-      <div className={classNames("container")}>
-        <Pane paneButtons={this.state.paneButtons} />
-        <div className={classNames("col-10", "content-resume")}>
-          {this.state.resume}
-        </div>
-      </div>
+        <Row columns={ui} classes="content" />
       );
   }
 }

@@ -23,8 +23,8 @@ export class Pane extends React.Component {
 
   render() {
     return (
-      <div className={classNames("col-2", "pane")}>
-        <ul className={classNames("col")}>
+      <div className={classNames("col-w")}>
+        <ul className={classNames("pane")}>
           {this.getNavList()}
         </ul>
       </div>

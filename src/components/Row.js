@@ -6,11 +6,12 @@ export class Row extends React.Component {
   constructor(props) {
     super(props);
     this.columns = props.columns;
+    this.classes = props.classes;
   }
 
   render() {
     return(
-      <div className={classNames("row")}>
+      <div className={classNames("row", this.classes)}>
         {this.columns}
       </div>
     );
